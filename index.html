@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Léo Sousa | São Luís - SLZ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap');
+    body { font-family: 'Montserrat', sans-serif; background-color: #0b0b0b; color: #f3f4f6; }
+    .font-oswald { font-family: 'Oswald', sans-serif; }
+    .gold-text { color: #d4af37; }
+    .gold-bg { background-color: #d4af37; }
+    .gold-border { border-color: #d4af37; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
 
+  <!-- HERO / HEADER -->
+  <header class="relative bg-neutral-900 border-b border-amber-500/20 py-12 px-4 text-center">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="inline-block p-1 rounded-full border-2 border-amber-500/40 mb-2">
+        <div class="w-24 h-24 rounded-full bg-neutral-800 flex items-center justify-center border border-amber-500">
+          <i class="fa-solid fa-scissors text-4xl text-amber-500"></i>
+        </div>
+      </div>
+      <h1 class="font-oswald text-4xl md:text-6xl font-bold tracking-wider uppercase text-white">
+        BARBEARIA <span class="gold-text">LÉO SOUSA</span>
+      </h1>
+      <p class="text-amber-500/90 font-medium tracking-widest uppercase text-sm md:text-base">
+        Estilo de verdade só aqui! • Cerveja, Futebol e Wi-Fi!
+      </p>
+
+      <!-- AVISO ATENDIMENTO -->
+      <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-4 py-2 rounded-full text-amber-400 text-xs md:text-sm font-semibold mt-4">
+        <i class="fa-solid fa-clock"></i> ATENDIMENTO POR ORDEM DE CHEGADA
+      </div>
+    </div>
+  </header>
+
+  <!-- TABELA DE PREÇOS -->
+  <section class="max-w-3xl mx-auto w-full px-4 py-10">
+    <div class="bg-neutral-900/90 border border-amber-500/30 rounded-2xl p-6 md:p-8 shadow-2xl relative overflow-hidden">
+      <div class="text-center mb-8">
+        <h2 class="font-oswald text-3xl font-bold text-white uppercase tracking-wide">
+          CONFIRA NOSSOS <span class="gold-text">VALORES</span>
+        </h2>
+        <div class="w-16 h-1 gold-bg
