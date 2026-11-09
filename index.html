@@ -7,8 +7,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Oswald:wght@500;700&display=swap');
-    body { font-family: 'Montserrat', sans-serif; background-color: #0b0b0b; color: #f3f4f6; }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Oswald:wght@500;700&display=swap');
+    body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; color: #f3f4f6; }
     .font-oswald { font-family: 'Oswald', sans-serif; }
     .gold-text { color: #d4af37; }
     .gold-bg { background-color: #d4af37; }
@@ -18,67 +18,49 @@
 <body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black relative">
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a href="https://wa.me/5598981150429?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20o%20tempo%20de%20espera." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-all flex items-center justify-center">
+  <a href="https://wa.me/5598981150429?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20o%20tempo%20de%20espera." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 hover:scale-110 transition-all flex items-center justify-center">
     <i class="fa-brands fa-whatsapp text-3xl"></i>
   </a>
 
-  <!-- BANNER PRINCIPAL / HERO -->
-  <header class="relative bg-neutral-950 border-b border-amber-500/20 py-12 px-4 text-center overflow-hidden">
-    <div class="max-w-4xl mx-auto space-y-6 relative z-10">
+  <!-- BANNER INICIAL COMPLETO (TELA CHEIA ESTILO REFERÊNCIA) -->
+  <header class="relative bg-neutral-950 border-b border-amber-500/20 min-h-screen flex items-center justify-center py-16 px-4 text-center overflow-hidden">
+    <div class="max-w-2xl mx-auto space-y-6 relative z-10 flex flex-col items-center">
       
-      <!-- LOGO OFICIAL (CORRIGIDA COM O NOME EXATO DO SEU ARQUIVO) -->
-      <div class="inline-block p-2 rounded-full bg-neutral-900 border-2 border-amber-500/50 shadow-2xl mb-2">
-        <img src="Opera Instantâneo_2026-11-09_151940_www.instagram.com.png" alt="Barbearia Léo Sousa" class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover">
+      <!-- LOCALIZAÇÃO TOPO -->
+      <p class="text-amber-400/90 text-xs md:text-sm font-semibold tracking-widest uppercase flex items-center gap-2">
+        <i class="fa-solid fa-location-dot"></i> SÃO LUÍS — MARANHÃO
+      </p>
+
+      <!-- LOGO OFICIAL CENTRALIZADA -->
+      <div class="p-2 rounded-full bg-neutral-900/80 border-2 border-amber-500/40 shadow-2xl my-2">
+        <img src="Opera Instantâneo_2026-11-09_151940_www.instagram.com.png" alt="Barbearia Léo Sousa" class="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover">
       </div>
 
-      <h1 class="font-oswald text-4xl md:text-6xl font-extrabold tracking-wider uppercase text-white">
+      <h1 class="font-oswald text-4xl md:text-5xl font-extrabold tracking-wider uppercase text-white">
         BARBEARIA <span class="gold-text">LÉO SOUSA</span>
       </h1>
       
-      <p class="text-amber-400 font-semibold tracking-widest uppercase text-sm md:text-base max-w-xl mx-auto">
-        Estilo de verdade só aqui! • Cerveja, Futebol e Wi-Fi Liberado
+      <!-- SLOGAN EM ITÁLICO -->
+      <p class="italic text-gray-300 text-lg md:text-xl font-medium">
+        "Seu estilo merece esse cuidado."
       </p>
 
-      <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/40 px-5 py-2 rounded-full text-amber-300 text-xs md:text-sm font-semibold tracking-wide">
-        <i class="fa-solid fa-clock text-amber-500"></i> ATENDIMENTO POR ORDEM DE CHEGADA
-      </div>
+      <!-- TEXTO DE APRESENTAÇÃO -->
+      <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
+        Na Barbearia Léo Sousa, você encontra estilo, conforto e um ambiente aconchegante com cerveja gelada, futebol e Wi-Fi liberado. Atendimento de alto padrão por ordem de chegada!
+      </p>
 
-      <div class="pt-4">
-        <a href="https://wa.me/5598981150429" target="_blank" class="inline-flex items-center gap-3 gold-bg text-black font-bold px-8 py-4 rounded-xl hover:bg-amber-400 hover:scale-105 transition-all shadow-lg text-lg">
+      <!-- BOTÃO PRINCIPAL -->
+      <div class="pt-4 w-full sm:w-auto">
+        <a href="https://wa.me/5598981150429" target="_blank" class="gold-bg text-black font-bold px-8 py-4 rounded-full hover:bg-amber-400 hover:scale-105 transition-all shadow-xl text-base md:text-lg uppercase tracking-wider flex items-center justify-center gap-3 w-full sm:w-auto">
           <i class="fa-brands fa-whatsapp text-2xl"></i> Falar no WhatsApp
         </a>
       </div>
     </div>
   </header>
 
-  <!-- DIFERENCIAIS DA BARBEARIA -->
-  <section class="max-w-5xl mx-auto w-full px-4 py-12">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-neutral-900/60 border border-neutral-800 p-5 rounded-2xl text-center space-y-2">
-        <i class="fa-solid fa-beer-mug-empty text-3xl gold-text mb-1"></i>
-        <h3 class="font-oswald text-lg font-bold text-white">Cerveja Gelada</h3>
-        <p class="text-xs text-gray-400">Para relaxar enquanto espera sua vez.</p>
-      </div>
-      <div class="bg-neutral-900/60 border border-neutral-800 p-5 rounded-2xl text-center space-y-2">
-        <i class="fa-solid fa-tv text-3xl gold-text mb-1"></i>
-        <h3 class="font-oswald text-lg font-bold text-white">Futebol Ao Vivo</h3>
-        <p class="text-xs text-gray-400">Assista aos jogos do seu time.</p>
-      </div>
-      <div class="bg-neutral-900/60 border border-neutral-800 p-5 rounded-2xl text-center space-y-2">
-        <i class="fa-solid fa-wifi text-3xl gold-text mb-1"></i>
-        <h3 class="font-oswald text-lg font-bold text-white">Wi-Fi Grátis</h3>
-        <p class="text-xs text-gray-400">Conexão rápida à disposição.</p>
-      </div>
-      <div class="bg-neutral-900/60 border border-neutral-800 p-5 rounded-2xl text-center space-y-2">
-        <i class="fa-solid fa-snowflake text-3xl gold-text mb-1"></i>
-        <h3 class="font-oswald text-lg font-bold text-white">Climatizado</h3>
-        <p class="text-xs text-gray-400">Ambiente 100% confortável.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- TABELA DE PREÇOS -->
-  <section class="max-w-3xl mx-auto w-full px-4 py-8">
+  <section class="max-w-3xl mx-auto w-full px-4 py-16">
     <div class="bg-neutral-900/90 border border-amber-500/30 rounded-2xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
       <div class="text-center mb-8">
         <h2 class="font-oswald text-3xl md:text-4xl font-bold text-white uppercase tracking-wide">
@@ -121,46 +103,140 @@
     </div>
   </section>
 
-  <!-- GALERIA DE FOTOS REAIS -->
-  <section class="max-w-5xl mx-auto w-full px-4 py-12">
+  <!-- GALERIA DE FOTOS REAIS (ESTILO INSTAGRAM FEED) -->
+  <section class="max-w-6xl mx-auto w-full px-4 py-12">
     <div class="text-center mb-8">
       <h2 class="font-oswald text-3xl md:text-4xl font-bold text-white uppercase tracking-wide">
-        GALERIA DE <span class="gold-text">TRABALHOS</span>
+        UM POUCO DO NOSSO <span class="gold-text">TRABALHO</span>
       </h2>
-      <p class="text-gray-400 text-xs md:text-sm mt-1">Cortes realizados na Barbearia Léo Sousa</p>
+      <p class="text-gray-400 text-xs md:text-sm mt-1">Cortes e barbas reais realizados na Barbearia Léo Sousa</p>
       <div class="w-20 h-1 gold-bg mx-auto mt-3 rounded-full"></div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <img src="Opera Instantâneo_2026-11-05_180051_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-64 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300">
-      <img src="Opera Instantâneo_2026-11-05_175010_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-64 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300">
-      <img src="Opera Instantâneo_2026-11-05_175056_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-64 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300">
-      <img src="Opera Instantâneo_2026-11-05_180134_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-64 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300">
+    <!-- GRELHA ESTRUTURADA DE TRABALHOS -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <img src="Opera Instantâneo_2026-11-09_161644_www.instagram.com.jpg" alt="Barba e Corte Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-09_161725_www.instagram.com.jpg" alt="Corte Freestyle Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-09_161750_www.instagram.com.jpg" alt="Corte Taper Fade Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-09_161824_www.instagram.com.jpg" alt="Corte Mullet Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-09_161850_www.instagram.com.jpg" alt="Corte Zigue-zague Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-09_161908_www.instagram.com.jpg" alt="Corte Teia de Aranha Léo Sousa" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-05_180051_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-05_175010_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-05_175056_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
+      <img src="Opera Instantâneo_2026-11-05_180134_www.instagram.com.png" alt="Corte Barbearia" class="w-full h-72 object-cover rounded-xl border border-amber-500/20 hover:scale-105 transition-all duration-300 shadow-md">
     </div>
   </section>
 
-  <!-- RODAPÉ & LOCALIZAÇÃO -->
-  <footer class="bg-neutral-950 border-t border-neutral-800 py-12 px-4 text-center mt-8">
-    <div class="max-w-xl mx-auto space-y-5">
-      <h3 class="font-oswald text-2xl font-bold text-white uppercase">
-        BARBEARIA <span class="gold-text">LÉO SOUSA</span>
-      </h3>
-      <p class="text-gray-400 text-sm">
-        <i class="fa-solid fa-location-dot gold-text mr-2"></i> Avenida São Bento, SLZ - São Luís / MA
-      </p>
-      <p class="text-gray-400 text-sm">
-        <i class="fa-regular fa-clock gold-text mr-2"></i> Segunda a Sábado: 08:30h às 19:30h | Domingo: 09:00h às 13:00h
-      </p>
+  <!-- SECÇÃO FINAL: HORÁRIO & ENDEREÇO (IDÊNTICA À REFERÊNCIA) -->
+  <section class="max-w-6xl mx-auto w-full px-4 py-16">
+    <div class="mb-8">
+      <p class="text-amber-500 font-semibold tracking-widest text-xs uppercase mb-1">ONDE ESTAMOS & QUANDO ATENDEMOS</p>
+      <h2 class="font-oswald text-4xl md:text-5xl font-extrabold text-white tracking-wide uppercase">
+        HORÁRIO & ENDEREÇO
+      </h2>
+      <div class="w-16 h-1 gold-bg mt-3"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
       
-      <div class="pt-2">
-        <a href="https://wa.me/5598981150429" target="_blank" class="inline-flex items-center justify-center gap-2 gold-bg text-black font-bold px-8 py-3 rounded-xl hover:bg-amber-400 transition-all w-full md:w-auto">
-          <i class="fa-brands fa-whatsapp text-xl"></i> Falar Conosco no WhatsApp
+      <!-- COLUNA DA ESQUERDA: FUNCIONAMENTO & ENDEREÇO OFICIAL -->
+      <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+        
+        <!-- CARD FUNCIONAMENTO -->
+        <div class="bg-neutral-900/60 border border-amber-500/30 rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <h3 class="font-oswald text-xl font-bold uppercase tracking-wider text-white">FUNCIONAMENTO</h3>
+          </div>
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between items-center border-b border-neutral-800/80 pb-3">
+              <span class="text-gray-300">Segunda a Sábado:</span>
+              <span class="font-bold text-amber-400">08:30h às 19:30h</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-300">Domingo:</span>
+              <span class="font-bold text-amber-400">09:00h às 13:00h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD ENDEREÇO OFICIAL -->
+        <div class="bg-neutral-900/60 border border-amber-500/30 rounded-2xl p-6 shadow-xl space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3 class="font-oswald text-xl font-bold uppercase tracking-wider text-white">ENDEREÇO OFICIAL</h3>
+          </div>
+          <p class="text-sm font-semibold text-gray-200">
+            Avenida São Bento, <span class="text-gray-400 font-normal">São Luís - MA</span>
+          </p>
+          <div>
+            <a href="https://maps.google.com/?q=Avenida+São+Bento+São+Luís+MA" target="_blank" class="inline-flex items-center gap-2 gold-bg text-black font-bold px-5 py-3 rounded-xl hover:bg-amber-400 transition-all text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-map-location-dot"></i> ABRIR NO GOOGLE MAPS
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- COLUNA DA DIREITA: CARD MAPA COM BOTÃO TRAÇAR ROTA -->
+      <div class="lg:col-span-7">
+        <div class="bg-neutral-900/80 border border-amber-500/30 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center text-center relative overflow-hidden bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] [background-size:16px_16px]">
+          
+          <!-- ICONE PIN COM GLOW -->
+          <div class="w-20 h-20 rounded-full bg-amber-500/20 border-2 border-amber-500/60 flex items-center justify-center text-amber-400 shadow-[0_0_30px_rgba(212,175,55,0.3)] mb-6">
+            <i class="fa-solid fa-location-dot text-4xl"></i>
+          </div>
+
+          <h3 class="font-oswald text-2xl md:text-3xl font-extrabold uppercase text-white tracking-wider mb-3">
+            VENHA CONHECER A BARBEARIA
+          </h3>
+
+          <p class="text-gray-400 text-xs md:text-sm max-w-md leading-relaxed mb-8">
+            Fácil acesso na Av. São Bento com estacionamento conveniente e ambiente 100% climatizado.
+          </p>
+
+          <a href="https://maps.google.com/?q=Avenida+São+Bento+São+Luís+MA" target="_blank" class="gold-bg text-black font-bold px-8 py-4 rounded-full hover:bg-amber-400 hover:scale-105 transition-all shadow-xl text-xs md:text-sm uppercase tracking-widest">
+            TRAÇAR ROTA AGORA
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="border-t border-neutral-900 py-6 px-4 bg-black">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full border border-amber-500/50 flex items-center justify-center text-amber-400">
+          <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div>
+          <h4 class="font-oswald font-bold text-white uppercase tracking-wider text-sm">BARBEARIA LÉO SOUSA</h4>
+          <p class="text-xs text-gray-500">São Luís - Maranhão</p>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-500 text-center">
+        © 2026 Barbearia Léo Sousa. Todos os direitos reservados.
+      </p>
+
+      <div class="flex items-center gap-3">
+        <a href="#" class="w-9 h-9 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-gray-400 hover:text-amber-400 transition-all">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5598981150429" target="_blank" class="w-9 h-9 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-gray-400 hover:text-amber-400 transition-all">
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
       </div>
 
-      <div class="pt-6 border-t border-neutral-900 text-xs text-gray-500">
-        © 2026 Barbearia Léo Sousa. Todos os direitos reservados.
-      </div>
     </div>
   </footer>
 
